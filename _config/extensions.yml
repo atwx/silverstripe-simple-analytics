@@ -1,0 +1,3 @@
+SilverStripe\ORM\DataObject:
+  extensions:
+    Analytics: Atwx\SimpleAnalytics\Extension\AnalyticsController

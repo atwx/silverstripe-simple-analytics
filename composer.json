@@ -1,0 +1,39 @@
+{
+    "name": "atwx/simple-analytics",
+    "description": "Basic analytics module for Silverstripe CMS",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "analytics"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Werner Krauß",
+            "email": "werner.krauss@netwerkstatt.at",
+            "role": "developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/atwx/silverstripe-simple-analytics/issues"
+    },
+    "require": {
+        "silverstripe/framework": "^4"
+    },
+    "require-dev": {
+        "silverleague/ideannotator": "^3",
+        "squizlabs/php_codesniffer": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Atwx\\SimpleAnalytics\\": "src/"
+        }
+    },
+    "extra": {
+        "installer-name": "simple-analytics"
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs",
+        "fix": "vendor/bin/phpcbf"
+    }
+}
