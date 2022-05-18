@@ -13,6 +13,7 @@ class TrackingData extends DataObject
 
     private static $db = [
         'URL' => 'Varchar(255)',
+        'Action' => 'Varchar(64)',
         'IPAddress' => 'Varchar(15)'
     ];
 

@@ -12,6 +12,7 @@ class AnalyticsController extends Extension
         $trackingData = TrackingData::create();
         $trackingData->IPAddress = $controller->getRequest()->getIP();
         $trackingData->URL = $controller->getRequest()->getURL();
+        $trackingData->Action = $controller->getAction();
         $trackingData->setComponent('TrackedObject', $this->owner);
 
         $this->owner->extend('updateTrackingData', $trackingData, $controller);
